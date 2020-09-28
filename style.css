@@ -12,17 +12,11 @@ main {
   grid-template-areas: "hero hero hero side1"
   "hero hero hero side2";
 }
-
 .hero {
   grid-area: hero;
   background: lightblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   height: 30vh;
 }
-
 
 .side1 {
   grid-area: side1;
@@ -33,3 +27,38 @@ main {
   grid-area: side2;
   background: orange;
 } 
+
+.hero, .side1, .side2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hero h1, #tagLine, button {
+  margin: 0 3rem;
+}
+
+.side1 h2, .side2 h2, .side1 p, .side2 p {
+  margin: 0 1rem;
+}
+.side1 h2, .side2 h2 {
+  color: white;
+}
+
+button {
+  padding: .5rem;
+  border-radius: 15px;
+  border: 0;
+  background: white;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+nav ul li {
+  display: inline;
+}
