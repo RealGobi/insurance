@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0 auto;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "hero hero hero side1"
+  "hero hero hero side2";
+}
+
+.hero {
+  grid-area: hero;
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+}
+
+
+.side1 {
+  grid-area: side1;
+  background: lightcoral;
+} 
+
+.side2 {
+  grid-area: side2;
+  background: orange;
+} 
